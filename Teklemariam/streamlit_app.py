@@ -1,4 +1,5 @@
 
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -82,18 +83,27 @@ def helper(dis, age, Dosage, precautions, description, medications, diets):
         'Upper Respiratory Tract Infection': 'Upper Respiratory Tract Infection (URTI)'
     }
     dis_csv = disease_mapping.get(dis, dis)
-    
-    # Ensure to get the single string value from the Series
-    desc = description[description['Disease'] == dis_csv]['Description'].iloc[0]
+
+    def get_single_value(df, disease_name, column_name, default=""):
+        row = df[df['Disease'] == disease_name]
+        if not row.empty:
+            return row[column_name].iloc[0]
+        return default
+
+    # Ensure safe lookups even when the disease is not present in a CSV
+    desc = get_single_value(description, dis_csv, 'Description', 'No description available for this disease.')
 
     # Precaution column is a single string, split it into a list of individual precautions
-    pre = precautions[precautions['Disease'] == dis_csv]['Precaution'].iloc[0].split(', ')
+    pre_text = get_single_value(precautions, dis_csv, 'Precaution', '')
+    pre = pre_text.split(', ') if isinstance(pre_text, str) and pre_text.strip() else []
 
     # Medication column is named 'medication' (lowercase)
-    med = medications[medications['Disease'] == dis_csv]['medication'].iloc[0].split(', ')
+    med_text = get_single_value(medications, dis_csv, 'medication', '')
+    med = med_text.split(', ') if isinstance(med_text, str) and med_text.strip() else []
 
     # Diets column is named 'Diets' (capital D)
-    die = diets[diets['Disease'] == dis_csv]['Diets'].iloc[0].split(', ')
+    die_text = get_single_value(diets, dis_csv, 'Diets', '')
+    die = die_text.split(', ') if isinstance(die_text, str) and die_text.strip() else []
 
     # Handling 'Dosage'
     dosage_info_list = []
@@ -313,6 +323,57 @@ def main():
             if st.button(st.session_state.lbl_predicted, key="predicted_btn"):
                 words = st.session_state.predicted_disease.split()
                 st.session_state['details_html'] = '<div style="font-size:26px; font-weight:700;">' + " ".join(f"{word}" for word in words) + '</div>'
+        
+        with col2:
+            if st.button(st.session_state.lbl_description, key="description_btn"):
+                # store description (full-width) in session_state
+                st.session_state['details_html'] = f"<div style=\"white-space:pre-wrap; font-size:20px;\">{st.session_state.desc}</div>"
+        
+        with col3:
+            if st.button(st.session_state.lbl_med, key="medication_btn"):
+                if st.session_state.med:
+                    bullet = selected_bullet
+                    meds_md = "\n".join(f"{bullet} {m}" for m in st.session_state.med)
+                    st.session_state['details_html'] = f'<div class="display-area" style="font-size:18px; background-color:{st.session_state.display_bg_color}; color:{st.session_state.display_text_color};">' + meds_md + '</div>'
+                else:
+                    st.session_state['details_html'] = f'<div class="display-area" style="font-size:18px; background-color:{st.session_state.display_bg_color}; color:{st.session_state.display_text_color};">- None</div>'
+        
+        with col4:
+            if st.button(st.session_state.lbl_dosage, key="dosage_btn"):
+                if st.session_state.dosage_info:
+                    bullet = selected_bullet
+                    dosage_md = "\n".join(f"{bullet} {d}" for d in st.session_state.dosage_info)
+                    st.session_state['details_html'] = f'<div class="display-area" style="font-size:18px; background-color:{st.session_state.display_bg_color}; color:{st.session_state.display_text_color};">' + dosage_md + '</div>'
+                else:
+                    st.session_state['details_html'] = f'<div class="display-area" style="font-size:18px; background-color:{st.session_state.display_bg_color}; color:{st.session_state.display_text_color};">- No specific dosage information available.</div>'
+        
+        with col5:
+            if st.button(st.session_state.lbl_diet, key="diet_btn"):
+                if st.session_state.die:
+                    bullet = selected_bullet
+                    diet_md = "\n".join(f"{bullet} {d}" for d in st.session_state.die)
+                    st.session_state['details_html'] = f'<div class="display-area" style="font-size:18px; background-color:{st.session_state.display_bg_color}; color:{st.session_state.display_text_color};">' + diet_md + '</div>'
+                else:
+                    st.session_state['details_html'] = f'<div class="display-area" style="font-size:18px; background-color:{st.session_state.display_bg_color}; color:{st.session_state.display_text_color};">- None</div>'
+        
+        with col6:
+            if st.button(st.session_state.lbl_precaution, key="precaution_btn"):
+                if st.session_state.pre:
+                    bullet = selected_bullet
+                    prec_md = "\n".join(f"{bullet} {p}" for p in st.session_state.pre)
+                    st.session_state['details_html'] = f'<div class="display-area" style="font-size:18px; background-color:{st.session_state.display_bg_color}; color:{st.session_state.display_text_color};">' + prec_md + '</div>'
+                else:
+                    st.session_state['details_html'] = f'<div class="display-area" style="font-size:18px; background-color:{st.session_state.display_bg_color}; color:{st.session_state.display_text_color};">- None</div>'
+
+        # After the buttons row, render the details area below (larger text)
+        details_area = st.empty()
+        if 'details_html' in st.session_state:
+            details_area.markdown(st.session_state['details_html'], unsafe_allow_html=True)
+
+
+if __name__ == "__main__":
+    main()
+
         
         with col2:
             if st.button(st.session_state.lbl_description, key="description_btn"):
