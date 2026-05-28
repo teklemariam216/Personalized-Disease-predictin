@@ -1,0 +1,152 @@
+﻿Age,Treatment,Dosage
+20,Albendazole,400 mg single dose or daily for 3 days
+21,Albendazole,425 mg single dose or daily for 3 days
+22,Albendazole,450 mg single dose or daily for 3 days
+23,Albendazole,475 mg single dose or daily for 3 days
+24,Albendazole,500 mg single dose or daily for 3 days
+25,Albendazole,525 mg single dose or daily for 3 days
+26,Albendazole,550 mg single dose or daily for 3 days
+27,Albendazole,575 mg single dose or daily for 3 days
+20,Artesunate,Artesunate injection 120 mg IV as per protocol
+21,Artesunate,Artesunate injection 130 mg IV as per protocol
+22,Artesunate,Artesunate injection 140 mg IV as per protocol
+23,Artesunate,Artesunate injection 150 mg IV as per protocol
+24,Artesunate,Artesunate injection 160 mg IV as per protocol
+25,Artesunate,Artesunate injection 170 mg IV as per protocol
+26,Artesunate,Artesunate injection 180 mg IV as per protocol
+27,Artesunate,Artesunate injection 190 mg IV as per protocol
+20,Azithromycin,Azithromycin 500 mg daily for 3 days
+21,Azithromycin,Azithromycin 550 mg daily for 3 days
+22,Azithromycin,Azithromycin 600 mg daily for 3 days
+23,Azithromycin,Azithromycin 650 mg daily for 3 days
+24,Azithromycin,Azithromycin 700 mg daily for 3 days
+25,Azithromycin,Azithromycin 750 mg daily for 3 days
+26,Azithromycin,Azithromycin 800 mg daily for 3 days
+27,Azithromycin,Azithromycin 850 mg daily for 3 days
+20,Cephalexin,Cephalexin 500 mg twice daily for 5 days
+21,Cephalexin,Cephalexin 550 mg twice daily for 5 days
+22,Cephalexin,Cephalexin 600 mg twice daily for 5 days
+23,Cephalexin,Cephalexin 650 mg twice daily for 5 days
+24,Cephalexin,Cephalexin 700 mg twice daily for 5 days
+25,Cephalexin,Cephalexin 750 mg twice daily for 5 days
+26,Cephalexin,Cephalexin 800 mg twice daily for 5 days
+27,Cephalexin,Cephalexin 850 mg twice daily for 5 days
+20,Chloroquine,Chloroquine standard regimen (200 mg base orally daily)
+21,Chloroquine,Chloroquine 4-4-2 regimen (275 mg base equivalent)
+22,Chloroquine,Chloroquine standard regimen (250 mg base orally daily)
+23,Chloroquine,Chloroquine 4-4-2 regimen (325 mg base equivalent)
+24,Chloroquine,Chloroquine standard regimen (300 mg base orally daily)
+25,Chloroquine,Chloroquine standard regimen (325 mg base orally daily)
+26,Chloroquine,Chloroquine standard regimen (350 mg base orally daily)
+27,Chloroquine,Chloroquine standard regimen (375 mg base orally daily)
+20,Chlorpheniramine,Chlorpheniramine 4 mg orally twice daily
+21,Chlorpheniramine,Chlorpheniramine 5 mg orally twice daily
+22,Chlorpheniramine,Chlorpheniramine 6 mg orally twice daily
+23,Chlorpheniramine,Chlorpheniramine 7 mg orally twice daily
+24,Chlorpheniramine,Chlorpheniramine 8 mg orally twice daily
+25,Chlorpheniramine,Chlorpheniramine 9 mg orally twice daily
+26,Chlorpheniramine,Chlorpheniramine 10 mg orally twice daily
+27,Chlorpheniramine,Chlorpheniramine 11 mg orally twice daily
+20,Cimetidine,Cimetidine IV injection
+21,Cimetidine,Cimetidine IV injection
+22,Cimetidine,Cimetidine IV injection
+23,Cimetidine,Cimetidine IV injection
+24,Cimetidine,Cimetidine IV injection
+25,Cimetidine,Cimetidine IV injection
+26,Cimetidine,Cimetidine IV injection
+27,Cimetidine,Cimetidine IV injection
+20,Ciprofloxacin,500 mg orally twice daily for 5–10 days
+21,Ciprofloxacin,Ciprofloxacin 550 mg twice daily for 5 days
+21,Ciprofloxacin,550 mg orally twice daily for 5 days
+21,Ciprofloxacin,550 mg orally twice daily for 7 days
+22,Ciprofloxacin,Ciprofloxacin 600 mg twice daily for 5 days
+22,Ciprofloxacin,600 mg twice daily for 7 days
+22,Ciprofloxacin,Ciprofloxacin 600 mg twice daily
+23,Ciprofloxacin,Ciprofloxacin 650 mg BID x 5 days
+24,Ciprofloxacin,700 mg orally twice daily for 5–10 days
+25,Ciprofloxacin,750 mg twice daily for 5 days
+26,Ciprofloxacin,800 mg orally twice daily for 5–10 days
+27,Ciprofloxacin,850 mg orally twice daily for 5–10 days
+20,Coartem,Coartem 4 tablets twice daily for 3 days
+21,Coartem,Coartem 4 tablets twice daily for 3 days
+22,Coartem,Coartem 4 tablets twice daily for 3 days (with high-fat meal)
+23,Coartem,Coartem 4 tablets twice daily for 3 days (with high-fat meal)
+24,Coartem,Coartem 4 tablets twice daily for 3 days (with high-fat meal)
+25,Coartem,Coartem 6 tablets twice daily for 3 days
+26,Coartem,Coartem 6 tablets twice daily for 3 days
+27,Coartem,Coartem 6 tablets twice daily for 3 days
+20,Cough Syrup,Cough syrup 5 mL orally every 4 hours as needed
+21,Cough Syrup,Cough syrup 6 mL orally every 4 hours as needed
+22,Cough Syrup,Cough syrup 7 mL orally every 4 hours as needed
+23,Cough Syrup,Cough syrup 8 mL orally every 4 hours as needed
+24,Cough Syrup,Cough syrup 9 mL orally every 4 hours as needed
+25,Cough Syrup,Cough syrup 10 mL orally every 4 hours as needed
+26,Cough Syrup,Cough syrup 11 mL orally every 4 hours as needed
+27,Cough Syrup,Cough syrup 12 mL orally every 4 hours as needed
+20,Diclofenac,50 mg orally as needed for pain
+21,Diclofenac,Diclofenac 55 mg as needed
+22,Diclofenac,Diclofenac 60 mg orally as needed for pain
+23,Diclofenac,65 mg orally as needed for pain
+23,Diclofenac,Diclofenac 90 mg IM
+24,Diclofenac,70 mg orally as needed for pain
+25,Diclofenac,75 mg orally as needed for pain
+26,Diclofenac,80 mg orally as needed for pain
+27,Diclofenac,85 mg orally as needed for pain
+20,Glucose IV,40% Glucose IV solution
+21,Glucose IV,41% Glucose IV solution
+22,Glucose IV,42% Glucose IV solution
+23,Glucose IV,43% Glucose IV solution
+24,Glucose IV,44% Glucose IV solution
+25,Glucose IV,45% Glucose IV solution
+26,Glucose IV,46% Glucose IV solution
+27,Glucose IV,47% Glucose IV solution
+20,Mebendazole,100 mg twice daily for 3 days
+21,Mebendazole,125 mg twice daily for 3 days
+22,Mebendazole,150 mg twice daily for 3 days
+23,Mebendazole,175 mg twice daily for 3 days
+24,Mebendazole,200 mg twice daily for 3 days
+25,Mebendazole,225 mg twice daily for 3 days
+26,Mebendazole,250 mg twice daily for 3 days
+27,Mebendazole,275 mg twice daily for 3 days
+20,Metronidazole,Metronidazole 500 mg TID
+21,Metronidazole,550 mg three times daily for 5–7 days
+22,Metronidazole,Metronidazole 600 mg TID x 5 days
+23,Metronidazole,Metronidazole 650 mg TID x 5 days
+24,Metronidazole,Metronidazole 700 mg TID x 5 days
+25,Metronidazole,Metronidazole 750 mg TID x 5 days
+26,Metronidazole,Metronidazole 800 mg TID x 5 days
+27,Metronidazole,Metronidazole 850 mg TID x 5 days
+20,ORS,ORS hydration 300 mL
+21,ORS,ORS oral hydration 450 mL as needed
+22,ORS,ORS oral hydration 500 mL as needed
+23,ORS,ORS oral hydration 550 mL as needed
+24,ORS,ORS oral hydration 600 mL as needed
+25,ORS,ORS oral hydration 650 mL as needed
+26,ORS,ORS oral hydration 700 mL as needed
+27,ORS,ORS oral hydration 750 mL as needed
+20,Paracetamol,Paracetamol 500 mg orally as needed for fever
+21,Paracetamol,Paracetamol 550 mg orally as needed for fever
+22,Paracetamol,Paracetamol 600 mg orally as needed for fever
+22,Paracetamol,Paracetamol 600 mg orally as needed for fever (Option 2)
+22,Paracetamol,Paracetamol 600 mg orally as needed for fever (Option 3)
+23,Paracetamol,Paracetamol 650 mg orally as needed for fever
+24,Paracetamol,Paracetamol 700 mg orally as needed for fever
+25,Paracetamol,Paracetamol 750 mg orally as needed for fever
+26,Paracetamol,Paracetamol 800 mg orally as needed for fever
+27,Paracetamol,Paracetamol 850 mg orally as needed for fever
+20,Primaquine,Primaquine 15 mg daily x 14 days
+21,Primaquine,Primaquine 20 mg daily x 14 days
+22,Primaquine,Primaquine 25 mg daily x 14 days
+23,Primaquine,Primaquine 30 mg daily x 14 days
+24,Primaquine,Primaquine 35 mg daily x 14 days
+25,Primaquine,Primaquine 40 mg daily x 14 days
+26,Primaquine,Primaquine 45 mg daily x 14 days
+27,Primaquine,Primaquine 50 mg daily x 14 days
+20,Tinidazole,2.0 g single oral dose
+21,Tinidazole,2.1 g single oral dose
+22,Tinidazole,2.2 g single oral dose
+23,Tinidazole,2.3 g single oral dose
+24,Tinidazole,2.4 g single oral dose
+25,Tinidazole,2.5 g single oral dose
+26,Tinidazole,2.6 g single oral dose
+27,Tinidazole,2.7 g single oral dose
